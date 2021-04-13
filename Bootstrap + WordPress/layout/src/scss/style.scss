@@ -14,5 +14,10 @@ $theme-colors:(
     'my-color-5': $my-color-5
 );
 
+// Classes Personalizadas
+
+$body-bg: $my-color-3;
+$link-color: $my-color-2; 
+
 // Inportando o bootstrap 
 @import "node_modules/bootstrap/scss/bootstrap";
