@@ -66,4 +66,25 @@ set_post_thumbnail_size(1280, 720, true);
 
  // Vou definir o tamanho do resumo:
 
+ add_filter('excerpt_length' , function($length){
+    return 50;
+});
+
+
+// Fazendo os botões de "Mais atigos" e "Mais novos" funcionarem :
+
+/**
+ * <a href="" class="btn btn-outline-primary">Mais antigos</a>
+ * <a href="" class="btn btn-outline-primary">Mais novos</a>
+ */
+
+ // Estilizando os botões de paginação:
+ 
+ add_filter('next_posts_link_attributes', 'posts_link_attributes');
+ add_filter('previous_posts_link_attributes', 'posts_link_attributes');
+
+ function posts_link_attributes(){
+     return 'class="btn btn-outline-primary"';
+ }
+
 ?>

@@ -32,8 +32,7 @@
 
 
           <div class="blog-pagination mb-5">
-            <a href="" class="btn btn-outline-primary">Mais antigos</a>
-            <a href="" class="btn btn-outline-primary">Mais novos</a>
+            <?php next_posts_link('Mais antigos')?>  <?php previous_posts_link('Mais novos')?>
           </div><!-- paginação -->
 
         </div><!-- col-8 -->
