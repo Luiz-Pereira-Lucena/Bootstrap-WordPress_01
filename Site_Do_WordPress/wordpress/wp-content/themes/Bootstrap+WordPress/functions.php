@@ -29,6 +29,7 @@ require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 
 
 
+
 // Registrando os menus ou o menu (vai depender de quantos menus tenho no meu site):
 register_nav_menus(array(
     'principal' => __('Menu_principal', 'Bootstrao+WordPress')
@@ -41,5 +42,28 @@ Se tivesse mais menus - por exemplo - colocariamos no array :
 
 OBS: não esquecer de colocar a vírgula para separar os menus;
 */
+
+
+
+// Definindo as imagens dos posts:
+
+add_theme_support('post-thumbnails');
+
+
+
+// Vou adicionar um tamanha para as imagens dos posts:
+
+set_post_thumbnail_size(1280, 720, true);
+/**
+ * Essa função quer dizer que vai setar a imagem e recorta-la para um tamanho de 1200px de largura e
+ * 720px de altura;
+ * O "true" da função é para deixar verdadeiro no sentido de: toda as imagens que forem posta no site 
+ * irão ser sempre recortadas;
+ * Outro detalhe importante é que o recorte da imagem sempre vai ser apartir do cetro;
+ */
+
+
+
+ // Vou definir o tamanho do resumo:
 
 ?>
